@@ -1,3 +1,7 @@
+/**
+ * Problem statement: uniformly accelerated motion, measuring position only.
+ */
+
 #include "kalman.hpp"
 
 #include <iostream>
@@ -8,8 +12,6 @@
 #include <Eigen/Dense>
 
 int main() {
-    // Problem statement: uniformly accelerated motion, measuring position only
-
     double dt = 1. / 30; // Time step
 
     // --------------- generate noisy measurements ---------------

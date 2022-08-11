@@ -41,11 +41,11 @@ public:
 private:
     Eigen::MatrixXd A, C, Q, R, P, K, I;
 
+    Eigen::VectorXd x_hat; /// A-posteriori estimated state
+
     int n; /// State-space dimension
 
-    double t{0};  /// Current time
+    double t{0}; /// Current time
 
     bool initialized{false}; /// Is the filter initialized?
-
-    Eigen::VectorXd x_hat;     /// A-posteriori estimated state
 };
