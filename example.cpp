@@ -20,7 +20,7 @@ int main() {
     std::normal_distribution<double> measure_noise(0., .2);
     auto t = 0.;
     for (int i = 0; i < 50; ++i) {
-        measurements[i] = 10. - 9.81 * pow(t, 2) + measure_noise(generator);
+        measurements[i] = 10. - 9.81 / 2. * pow(t, 2) + measure_noise(generator);
         t += dt;
     }
 
