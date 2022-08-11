@@ -1,5 +1,5 @@
 # Linear Kalman Filter
-![](/home/flynn/sources/cpp_projects/linear-kalman/result.png)
+![](result.png)
 
 A basic Linear Kalman filter implementation in C++ using the [Eigen](http://eigen.tuxfamily.org/) library.
 
